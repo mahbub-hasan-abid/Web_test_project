@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+
+	<link rel="stylesheet" href="style.css"> 
+	<title>ContactUs</title> 
+</head> 
+
+<body> 
+	<header> 
+		<h1 id="top">Online</h1> 
+		<h1 id="top1">Book Shop</h1> 
+	</header> 
+	<hr> 
+	<div class="search-container">
+        <input type="text" class="search-input" placeholder="এখানে আপনার পছন্দের বই কিংবা লেখকের নাম লিখুন">
+        <button class="search-button">Search</button>
+        <div class="auth-buttons">
+            <a href="#" class="auth-button">Sign In</a>
+            <a href="#" class="auth-button">Log In</a>
+        </div>
+    </div>
+	<nav id="navbar"> 
+		<img src="pic/book_shop_logo.jpg"> 
+		<ul id="navcontent"> 
+			<li><a href="index.html">Home</a></li> 
+			<li><a href="#">About</a></li> 
+			<li><a href="#">Offers</a></li> 
+			<li><a href="contact.html">ContactUs</a></li> 
+		</ul> 
+	</nav>
+	<div id="ContactUs"> 
+		<h1>Contact Us</h1> 
+		<form action="contactHandler.php" method="post"> 
+			<div class="form-shape"> 
+				<label for="query"> 
+					Type of Query 
+				</label> 
+				<select name="myQuery" id="query" required> 
+					<option value="sel" selected> 
+						Select 
+					</option> 
+					<option value="ord"> 
+						Order related Issues 
+					</option> 
+					<option value="Site"> 
+						Site related Issues 
+					</option> 
+					<option value="fed"> 
+						Complaint related Issues 
+					</option> 
+					<option value="others"> 
+						Others 
+					</option> 
+				</select> 
+			</div> 
+			<div class="form-shape"> 
+				<label for="name">Name</label> 
+				<input type="text" name="myName"
+					id="name"
+					placeholder="Enter your Name" required> 
+			</div> 
+			<div class="form-shape"> 
+				<label for="email">Email-Id</label> 
+				<input type="email" name="myEmail"
+					id="email"
+					placeholder="Enter your email" required> 
+			</div> 
+			<div class="form-shape"> 
+				<label for="pho">Phone Number</label> 
+				<input type="phone" name="myPhone"
+					id="pho"
+					placeholder="Enter your Phone no" required> 
+			</div> 
+			<div class="form-shape"> 
+				<label for="message"> 
+					Ellaborate your query 
+				</label> 
+				<textarea name="mesg" id="message"
+					cols="30" rows="10" required> 
+				</textarea> 
+			</div> 
+			<input type="submit" name = "submit" value="Submit"> 
+		</form> 
+	</div> 
+</body> 
+
+</html> 

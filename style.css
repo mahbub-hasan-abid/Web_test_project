@@ -1,0 +1,469 @@
+
+*{
+    margin: 0px;
+    margin-left:10px;
+    margin-right: 10px;
+    padding:0px;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+#top{
+    color:rgb(245, 10, 10);
+    text-align:center;
+    font-size:46px;
+
+    font-family: 'CharukolaUltraLight', sans-serif;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.search-input {
+    border: 1px solid black;
+    background-color: #ffffff;
+    flex: 2;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.search-button {
+    background-color: #e20c0c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+
+#btnHomepage {
+    text-align: center;
+    margin: 10px;
+    display: block;
+    padding: 5px 10px;
+}
+
+#btnHomepage a {
+    text-decoration: none;
+    background-color: #333;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+#top1{
+    text-align:center;
+    color:black;
+    font-size:21px;
+    font-family: 'CharukolaUltraLight', sans-serif;
+}
+
+#navbar img{
+    display:block;
+    width: 115px;
+    /* height:50px; */
+    margin:auto;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+
+#navbar{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(231, 227, 227);
+    
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top:10px;
+   /* border: 2px solid black; */
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+
+
+#navcontent{
+    display: flex;
+    justify-content: center;
+    /* color: black; */
+}
+
+#navcontent li a{
+    color: #000;
+}
+
+
+
+ul li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+ul li a{
+    padding: 5px;
+    color:white;
+    text-decoration: none;
+    border-radius:10px;
+}
+ul li a:hover{
+    background-color: rgb(158, 145, 145);
+    border-radius: 10px;
+}
+#container4{
+    
+   
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}
+#book-container {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px; 
+    margin: auto; /* Center the container on the page */
+    position: relative; /* Position relative for absolute positioning of button */
+    overflow: hidden; /* Hide overflow to contain button within the container */
+    transition: border-color 0.3s ease-in-out;
+}
+
+#book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#book-container:hover {
+    border-color: #007BFF; /* Change to your desired border color */
+}
+
+#book-container:hover #book-image {
+    transform: scale(1.1); /* Example: Increase size on hover */
+}
+
+#add-to-cart {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#book-container:hover #add-to-cart {
+    opacity: 1;
+}
+
+#previous-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+#container1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    
+
+}
+
+ 
+#container1::before{
+    content:'';
+    width: 94.1vw;
+    height:59vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right:45px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.89;
+    border: 2px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+#row1{
+   
+   background-color:rgb(209, 203, 203);
+    font-weight:bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35px;
+    padding: 5px 10px;
+    border-radius: 15px;
+  
+    
+}
+#row1 p{
+    color: #e20c0c;
+    opacity: .991;
+}
+
+/*Button Styling*/
+.btn{
+    padding: 5px 10px;
+    margin-top:15px;
+    border: 3px solid white;
+    border-radius:15px;
+    background-color:yellow;
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 0);
+}
+
+
+#container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+#tagLine{
+    margin-top: 20px;
+    background-color:#ED1722;
+    height: 300px;
+    color: white;
+    text-align:center;
+    padding: auto;
+    font-size: 50px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#row2{
+    background-image: url('book_1.jpg');
+    width:24vw;
+    height:21vh;
+    box-shadow: 2px 7px 16px 19px;
+     margin-top:51px;
+     margin-bottom: 51px;
+     display: flex;
+    justify-content: center;
+     align-items: flex-end;
+     position: relative;
+     margin-right: 38px;
+     border-radius: 40px;
+}
+#row2box{
+    width:24vw;
+    height:21vh;
+
+
+}
+#row2::before{
+    content: '';
+    background: url('./pic/book_2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 24vw;
+    height:21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#row3{
+    border: 2px solid rgb(252, 252, 252);
+    position: relative;
+    width: 24vw;
+    height:21vh;
+    display: flex;
+    justify-content: center;
+     align-items: flex-end;
+     box-shadow: 2px 7px 16px 19px;
+     margin-top:51px;
+     margin-bottom: 51px;
+     
+     margin-left: 38px;
+     border-radius: 40px;
+}
+#row3::before{
+    border: 2px solid rgb(252, 252, 252);
+
+    content: '';
+    background: url('./pic/book_7.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 24vw;
+    height:21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+#top3{
+    text-align: center;
+    color:red;
+    font-family: 'Ubuntu Mono', monospace;
+}
+  
+#row4{
+    width: 250px;
+    height: 360px;
+    border: 2px solid black;
+   
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row5{
+    width: 300px;
+    height: 360px;
+    border: 2px solid black;
+    background:url('pic/book_3.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row6{
+    width: 300px;
+    height: 360px;
+    border: 2px solid black;
+    background:url('pic/book_4.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row7{
+    width: 300px;
+    height: 360px;
+    border: 2px solid black;
+    background:url('pic/book_7.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+/*Designing the footer*/
+footer{
+    text-align: center;
+}
+/*Designing of Contact Us*/
+#ContactUs{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+.form-shape input, .form-shape select, .form-shape textarea{
+   width: 92%;
+   padding: 0.5rem;
+}
+/*Changing the color of placeholder*/
+::placeholder{                  
+    color:gray;
+}
+/*Making the webpage responsive using media queries*/
+@media only screen and (max-width:1131px){
+    #row4{
+        width: 42vw;
+    }
+    #row5{
+        width:45vw;
+    }
+    #row6{
+        margin-top: 20px;
+        width:90vw;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:781px)
+{
+    #row4{
+        width:84vw;
+        margin: auto;
+        margin-left: 22px;
+    }
+    #row5{
+        
+        width:84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+    #row6{
+        width:84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+}
+@media only screen and (max-width:600px){
+    #row4{
+        width:78vw;
+        margin: auto;
+        margin-left: 3px;
+    }
+    #row5{
+        
+        width:78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    #row6{
+        width:78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+}
+@media only screen and (min-height:1000px){
+    #navbar{
+        height:10vh;
+    }
+    #container1::before{
+        height:39vh;
+    }
+    #container1{
+        height:44vh
+    }
+}
