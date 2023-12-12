@@ -260,6 +260,39 @@ ul li a:hover{
     align-items: center;
     justify-content: center;
 }
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+
+
+/* Add styling as needed for navigation dots */
+
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
 #row2{
     background-image: url('book_1.jpg');
     width:24vw;
